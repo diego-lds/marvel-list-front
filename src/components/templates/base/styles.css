@@ -1,5 +1,6 @@
 .main {
   background-color: #070707;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,6 +16,7 @@
 }
 
 .marvel-logo {
+  margin-top: 10px;
   height: 90px;
   width: 200px;
 }

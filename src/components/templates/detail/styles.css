@@ -1,0 +1,29 @@
+.detail {
+  display: flex;
+}
+.description {
+  padding-left: 10px;
+}
+.description span {
+  font-family: "Oswald";
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.description p {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: white;
+}
+
+.series-list {
+  margin-top: 40px;
+  font-family: "Oswald";
+  font-size: 24px;
+}
+
+.series-list li {
+  margin: 10px 0;
+  font-family: "Oswald";
+  font-size: 18px;
+}

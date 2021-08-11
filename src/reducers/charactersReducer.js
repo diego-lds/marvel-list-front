@@ -8,6 +8,11 @@ export const charactersReducer = (state = { characters: [] }, action) => {
         ...state,
         characters: payload,
       };
+    case TYPES.SELECT_CHARACTER:
+      return {
+        ...state,
+        selectedCharacter: payload,
+      };
     default:
       return state;
   }
