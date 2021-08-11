@@ -3,7 +3,7 @@ import { combineReducers } from "redux";
 import { charactersReducer } from "./charactersReducer";
 
 const reducers = combineReducers({
-  characters: charactersReducer,
+  charactersReducer,
 });
 
 export default reducers;

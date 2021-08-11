@@ -1,6 +1,6 @@
 import { TYPES } from "../actions/types";
 
-export const fetchAllCharacters = () => ({
+export const setCharacters = (data) => ({
   type: TYPES.FETCH_CHARACTERS,
-  payload: [],
+  payload: data,
 });
