@@ -1,0 +1,17 @@
+.char-card {
+  width: 168px;
+  max-height: 321px;
+  text-align: center;
+}
+
+.char-card img {
+  max-width: 168px;
+  max-height: 321px;
+}
+
+.char-card span {
+  color: white;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+}
