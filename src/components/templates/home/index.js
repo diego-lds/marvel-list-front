@@ -1,12 +1,20 @@
+import Grid from "../../molecules/Grid";
 import { useSelector } from "react-redux";
+
 import "./styles.css";
 
 const HomeTemplate = () => {
-  const characters = useSelector((state) => state.characters);
+  const { characters } = useSelector((state) => state.charactersReducer);
 
+  const handleOnClick = (char) => {
+    console.log(char);
+  };
   return (
     <>
-      <span className="teste">PAGE</span>
+      <p>DESAFIO</p>
+      <p>LISTAGEM DE PERSONAGENS DA MARVEL</p>
+      <input />
+      <Grid list={characters} handleOnClick={handleOnClick} />
     </>
   );
 };

@@ -1,6 +1,6 @@
-import "./styles.css";
 import imgThanos from "../../../assets/background-image-thanos.png";
 import logoMarvel from "../../../assets/logo-marvel.png";
+import "./styles.css";
 
 const BaseTemplate = ({ template }) => {
   return (
@@ -11,7 +11,7 @@ const BaseTemplate = ({ template }) => {
           <img className="marvel-logo" src={logoMarvel} />
         </div>
         <div className="container">
-          <div classname="content">{template}</div>
+          <div className="content">{template}</div>
         </div>
       </div>
     </>

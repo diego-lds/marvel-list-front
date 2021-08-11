@@ -1,0 +1,10 @@
+span {
+  color: white;
+}
+
+.grid-container {
+  border: thin solid red;
+  grid-template-columns: repeat(5, 1fr);
+  display: grid;
+  margin-top: 50px;
+}
