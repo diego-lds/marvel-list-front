@@ -1,0 +1,19 @@
+p {
+  color: white;
+  font-family: Oswald;
+}
+p:first-child {
+  font-size: 24px;
+  font-weight: 700;
+}
+p:last-child {
+  font-size: 20px;
+}
+
+input {
+  width: 300px;
+}
+
+span {
+  color: white;
+}

@@ -1,9 +1,22 @@
-import { useEffect } from "react";
-import { connect } from "react-redux";
-import * as actions from "../../../store/actions";
+import Grid from "../../molecules/Grid";
+import { useSelector } from "react-redux";
 
-const HomeTemplate = (props) => {
-  return <h1>Home</h1>;
+import "./styles.css";
+
+const HomeTemplate = () => {
+  const { characters } = useSelector((state) => state.charactersReducer);
+
+  const handleOnClick = (char) => {
+    console.log(char);
+  };
+  return (
+    <>
+      <p>DESAFIO</p>
+      <p>LISTAGEM DE PERSONAGENS DA MARVEL</p>
+      <input />
+      <Grid list={characters} handleOnClick={handleOnClick} />
+    </>
+  );
 };
 
 export default HomeTemplate;

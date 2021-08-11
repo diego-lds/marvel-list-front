@@ -15,7 +15,7 @@ const fetchCharacters = async () => {
 
   try {
     const response = await api.get(
-      `/characters?apikey=${pubkey}&ts=${currentDate}&hash=${hash}&offset=${100}`
+      `/characters?apikey=${pubkey}&ts=${currentDate}&hash=${hash}`
     );
     return response;
   } catch (err) {
