@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
 import HomeTemplate from "../../components/templates/home";
+import BaseTemplate from "../../components/templates/base";
 import fetchCharacters from "../../service/api";
 import { setCharacters } from "../../store/actions";
 
@@ -19,7 +20,7 @@ const Home = () => {
     dispatch(setCharacters(chars));
   };
 
-  return <HomeTemplate />;
+  return <BaseTemplate template={<HomeTemplate />} />;
 };
 
 const parseCharacters = (data) => {

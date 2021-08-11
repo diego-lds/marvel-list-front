@@ -1,9 +1,14 @@
-import { useEffect } from "react";
-import { connect } from "react-redux";
-import * as actions from "../../../store/actions";
+import { useSelector } from "react-redux";
+import "./styles.css";
 
-const HomeTemplate = (props) => {
-  return <h1>Home</h1>;
+const HomeTemplate = () => {
+  const characters = useSelector((state) => state.characters);
+
+  return (
+    <>
+      <span className="teste">PAGE</span>
+    </>
+  );
 };
 
 export default HomeTemplate;
