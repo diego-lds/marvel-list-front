@@ -23,13 +23,14 @@ const Home = () => {
 };
 
 const parseCharacters = (data) => {
+  console.log(data);
   const parsed = data?.data?.data?.results.map((item) => ({
-    id: item.id,
+    id: item.id.toString(),
     name: item.name,
     series: item?.series?.items.map((item) => ({ name: item.name })),
     imgURL: `${item.thumbnail.path}/portrait_incredible.${item.thumbnail.extension}`,
+    description: item.description,
   }));
-  console.log(parsed);
   return parsed;
 };
 

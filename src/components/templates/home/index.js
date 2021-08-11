@@ -1,13 +1,18 @@
 import Grid from "../../molecules/Grid";
-import { useSelector } from "react-redux";
+import { selectCharacter } from "../../../store/actions";
+import { useSelector, useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 
 import "./styles.css";
 
 const HomeTemplate = () => {
+  const history = useHistory();
+  const dispatch = useDispatch();
   const { characters } = useSelector((state) => state.charactersReducer);
 
-  const handleOnClick = (char) => {
-    console.log(char);
+  const handleOnClick = async (char) => {
+    await dispatch(selectCharacter(char));
+    history.push("/detail");
   };
   return (
     <>
