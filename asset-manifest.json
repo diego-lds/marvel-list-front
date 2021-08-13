@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac9b0081.chunk.css",
-    "main.js": "/static/js/main.a63d9585.chunk.js",
-    "main.js.map": "/static/js/main.a63d9585.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b42821cc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b42821cc.js.map",
-    "static/js/2.49e9af5d.chunk.js": "/static/js/2.49e9af5d.chunk.js",
-    "static/js/2.49e9af5d.chunk.js.map": "/static/js/2.49e9af5d.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.ac9b0081.chunk.css.map": "/static/css/main.ac9b0081.chunk.css.map",
-    "static/js/2.49e9af5d.chunk.js.LICENSE.txt": "/static/js/2.49e9af5d.chunk.js.LICENSE.txt",
-    "static/media/background-image-thanos.783aaf7b.png": "/static/media/background-image-thanos.783aaf7b.png",
-    "static/media/logo-marvel.ecc4d175.png": "/static/media/logo-marvel.ecc4d175.png"
+    "main.css": "/marvel-list-front/static/css/main.ac9b0081.chunk.css",
+    "main.js": "/marvel-list-front/static/js/main.a63d9585.chunk.js",
+    "main.js.map": "/marvel-list-front/static/js/main.a63d9585.chunk.js.map",
+    "runtime-main.js": "/marvel-list-front/static/js/runtime-main.b0f2a176.js",
+    "runtime-main.js.map": "/marvel-list-front/static/js/runtime-main.b0f2a176.js.map",
+    "static/js/2.49e9af5d.chunk.js": "/marvel-list-front/static/js/2.49e9af5d.chunk.js",
+    "static/js/2.49e9af5d.chunk.js.map": "/marvel-list-front/static/js/2.49e9af5d.chunk.js.map",
+    "index.html": "/marvel-list-front/index.html",
+    "static/css/main.ac9b0081.chunk.css.map": "/marvel-list-front/static/css/main.ac9b0081.chunk.css.map",
+    "static/js/2.49e9af5d.chunk.js.LICENSE.txt": "/marvel-list-front/static/js/2.49e9af5d.chunk.js.LICENSE.txt",
+    "static/media/background-image-thanos.783aaf7b.png": "/marvel-list-front/static/media/background-image-thanos.783aaf7b.png",
+    "static/media/logo-marvel.ecc4d175.png": "/marvel-list-front/static/media/logo-marvel.ecc4d175.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b42821cc.js",
+    "static/js/runtime-main.b0f2a176.js",
     "static/js/2.49e9af5d.chunk.js",
     "static/css/main.ac9b0081.chunk.css",
     "static/js/main.a63d9585.chunk.js"
