@@ -1,9 +1,12 @@
 import "./styles.css";
 
-const DetailTemplate = ({ character }) => {
+const DetailTemplate = ({ character, goBack }) => {
   const { imgURL, name, series, description } = character;
   return (
     <>
+      <span className="go-back" onClick={goBack}>
+        &#10094; VOLTAR
+      </span>
       <div className="detail">
         <div>
           <img src={imgURL} />

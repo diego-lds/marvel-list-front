@@ -34,11 +34,9 @@ const Home = () => {
   const handleOnChange = (value) => {
     if (value.length > 2) {
       fetchCharacters(value, 0).then((data) => {
-        console.log(data);
         const characters = parseCharacters(data);
         setSearchedCharacters(characters);
         const listOption = characters.map(parseOption);
-
         setListOptions(listOption);
       });
     }

@@ -1,5 +1,6 @@
 .detail {
   display: flex;
+  margin-top: 20px;
 }
 .description {
   padding-left: 40px;
@@ -26,4 +27,11 @@
   margin: 10px 0;
   font-family: "Oswald";
   font-size: 18px;
+}
+
+.go-back {
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Open Sans";
+  margin-bottom: 50px;
 }
