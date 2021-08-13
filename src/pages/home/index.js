@@ -23,7 +23,6 @@ const Home = () => {
 };
 
 const parseCharacters = (data) => {
-  console.log(data);
   const parsed = data?.data?.data?.results.map((item) => ({
     id: item.id.toString(),
     name: item.name,

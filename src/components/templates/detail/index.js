@@ -1,9 +1,7 @@
 import "./styles.css";
 
 const DetailTemplate = ({ character }) => {
-  console.log(character);
   const { imgURL, name, series, description } = character;
-  console.log(series);
   return (
     <>
       <div className="detail">
