@@ -2,7 +2,7 @@
   display: flex;
 }
 .description {
-  padding-left: 10px;
+  padding-left: 40px;
 }
 .description span {
   font-family: "Oswald";
@@ -12,7 +12,7 @@
 
 .description p {
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 14px;
   color: white;
 }
 

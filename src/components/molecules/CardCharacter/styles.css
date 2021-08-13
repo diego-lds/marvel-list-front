@@ -2,11 +2,19 @@
   width: 168px;
   max-height: 321px;
   text-align: center;
+  cursor: pointer;
 }
 
 .char-card img {
   max-width: 168px;
   max-height: 321px;
+  transition: all 0.3s ease-in;
+}
+
+.char-card:hover,
+.char-card img:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .char-card span {

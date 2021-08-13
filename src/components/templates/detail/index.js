@@ -10,18 +10,22 @@ const DetailTemplate = ({ character }) => {
         </div>
         <div className="description">
           <span>{name}</span>
-          <p>{description}</p>
+          <p>{description || "Descrição não disponível"}</p>
         </div>
       </div>
       <div className="series-list">
         <span>LISTAGEM DE SERIES</span>
         <hr />
         <ul>
-          {series.map((serie) => (
-            <li key={serie.name}>
-              <span>{serie.name}</span>
-            </li>
-          ))}
+          {series.length > 0 ? (
+            series.map((serie) => (
+              <li key={serie.name}>
+                <span>{serie.name}</span>
+              </li>
+            ))
+          ) : (
+            <span>Sem series listadas 😢</span>
+          )}
         </ul>
       </div>
     </>
