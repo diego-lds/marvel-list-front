@@ -14,14 +14,14 @@ const api = axios.create({
   baseURL: process.env.REACT_APP_BASE_URL,
 });
 
-const fetchCharacters = async (nameStartsWith = "") => {
+const fetchCharacters = async (nameStartsWith = "", offset = 0) => {
   const nameStartsWithValue = nameStartsWith.length
     ? `&nameStartsWith=${nameStartsWith}`
     : "";
 
   try {
     const response = await api.get(
-      `/characters?apikey=${pubkey}&ts=${currentDate}&hash=${hash}${nameStartsWithValue}`
+      `/characters?apikey=${pubkey}&ts=${currentDate}&hash=${hash}&offset=${offset}${nameStartsWithValue}`
     );
     return response;
   } catch (err) {

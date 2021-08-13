@@ -1,4 +1,5 @@
 import Grid from "../../molecules/Grid";
+import Pagination from "../../Pagination";
 import SearchInput from "../../SearchInput";
 
 import "./styles.css";
@@ -9,6 +10,8 @@ const HomeTemplate = ({
   handleOnChange,
   handleOnSelect,
   listOptions,
+  handleOnClickPage,
+  endpointConfig,
 }) => {
   return (
     <>
@@ -22,6 +25,10 @@ const HomeTemplate = ({
           handleOnSelect={handleOnSelect}
         />
       </div>
+      <Pagination
+        handleOnClickPage={handleOnClickPage}
+        endpointConfig={endpointConfig}
+      />
       <Grid list={characters} handleOnClick={handleOnClick} />
     </>
   );
