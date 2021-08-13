@@ -7,11 +7,11 @@
 
 .box span {
   font-size: 25px;
-  color: white;
   margin: 0 15px 0 15px;
 }
 
 .page-info {
+  color: white;
   font-size: 12px;
   font-family: "Open Sans";
 }

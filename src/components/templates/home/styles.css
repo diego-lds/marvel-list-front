@@ -1,12 +1,12 @@
-p {
+.title {
   color: white;
   font-family: Oswald;
 }
-p:first-child {
+.title p:first-child {
   font-size: 24px;
   font-weight: 700;
 }
-p:last-child {
+.title p:last-child {
   font-size: 20px;
 }
 
