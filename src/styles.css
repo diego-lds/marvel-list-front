@@ -48,6 +48,21 @@ input:focus {
     font-size: 30px;
   }
 
-  .card {
+  .detail {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .description span {
+    font-size: 32px;
+  }
+
+  .series-list {
+    text-align: center;
   }
 }
