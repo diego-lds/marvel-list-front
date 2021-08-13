@@ -1,4 +1,4 @@
-import Grid from "../../molecules/Grid";
+import Grid from "../../Grid";
 import Pagination from "../../Pagination";
 import SearchInput from "../../SearchInput";
 
