@@ -21,7 +21,7 @@ input:focus {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 727px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -34,8 +34,6 @@ input:focus {
     justify-content: center;
     align-items: center;
     margin: 50px 0 0 0;
-
-    border: thin solid red;
   }
   .input-search {
     width: 100%;
