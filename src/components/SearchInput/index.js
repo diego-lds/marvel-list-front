@@ -2,16 +2,37 @@ import Select from "react-select";
 
 import "./styles.css";
 
-const SearchInput = ({ placeholder, options, handleOnChange }) => {
+const SearchInput = ({
+  placeholder,
+  options,
+  handleOnChange,
+  handleOnSelect,
+}) => {
+  const styles = {
+    control: (styles) => ({
+      ...styles,
+      fontFamily: "Open Sans",
+    }),
+    option: (styles) => {
+      return {
+        ...styles,
+        fontFamily: "Open Sans",
+      };
+    },
+  };
+
   return (
     <>
-      <div className="search-input">
-        <Select
-          placeholder={placeholder}
-          options={options}
-          onInputChange={(e) => console.log(e)}
-        />
-      </div>
+      <Select
+        id="test"
+        placeholder={placeholder}
+        noOptionsMessage={() => null}
+        options={options || []}
+        onChange={handleOnSelect}
+        onInputChange={handleOnChange}
+        styles={styles}
+        // onKeyDown={handleOnSelect}
+      />
     </>
   );
 };
