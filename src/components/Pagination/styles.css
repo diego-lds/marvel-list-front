@@ -1,0 +1,28 @@
+.box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box span {
+  font-size: 25px;
+  color: white;
+  margin: 0 15px 0 15px;
+}
+
+.page-info {
+  font-size: 12px;
+  font-family: "Open Sans";
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.arrow {
+  width: 30px;
+  border: thin solid red;
+}

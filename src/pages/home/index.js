@@ -16,6 +16,7 @@ const Home = () => {
   const { characters } = useSelector((state) => state.charactersReducer);
   const [searchedCharacters, setSearchedCharacters] = useState([]);
   const [listOptions, setListOptions] = useState();
+  const [endpointConfig, setEndpointConfig] = useState();
 
   useEffect(() => {
     fetchData();
@@ -32,7 +33,8 @@ const Home = () => {
 
   const handleOnChange = (value) => {
     if (value.length > 2) {
-      fetchCharacters(value).then((data) => {
+      fetchCharacters(value, 0).then((data) => {
+        console.log(data);
         const characters = parseCharacters(data);
         setSearchedCharacters(characters);
         const listOption = characters.map(parseOption);
@@ -53,10 +55,29 @@ const Home = () => {
     id: data.id,
   });
 
-  const fetchData = async () => {
-    const data = await fetchCharacters();
+  const fetchData = async (offset = 0) => {
+    const data = await fetchCharacters("", offset);
+
+    const endpointConfig = {
+      limit: Number(data?.data?.data?.limit),
+      offset: Number(data?.data?.data?.offset),
+      total: Number(data?.data?.data?.total),
+    };
+    setEndpointConfig(endpointConfig);
+
     const chars = parseCharacters(data);
     dispatch(setCharacters(chars));
+  };
+
+  const handleOnClickPage = (value) => {
+    if (value === "right") {
+      const off = endpointConfig.offset + endpointConfig.limit;
+      fetchData(off);
+    } else {
+      const off = endpointConfig.offset - endpointConfig.limit;
+
+      fetchData(off < 0 && 0);
+    }
   };
 
   return (
@@ -68,6 +89,8 @@ const Home = () => {
           handleOnClick={handleOnClick}
           handleOnChange={handleOnChange}
           handleOnSelect={handleOnSelect}
+          handleOnClickPage={handleOnClickPage}
+          endpointConfig={endpointConfig}
         />
       }
     />
