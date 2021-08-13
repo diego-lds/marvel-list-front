@@ -15,8 +15,10 @@ const HomeTemplate = ({
 }) => {
   return (
     <>
-      <p>DESAFIO</p>
-      <p>LISTAGEM DE PERSONAGENS DA MARVEL</p>
+      <div className="title">
+        <p>DESAFIO</p>
+        <p>LISTAGEM DE PERSONAGENS DA MARVEL</p>
+      </div>
       <div className="input-search">
         <SearchInput
           placeholder="Buscador de personagens"
