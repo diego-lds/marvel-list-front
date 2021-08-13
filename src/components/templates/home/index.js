@@ -1,24 +1,27 @@
 import Grid from "../../molecules/Grid";
-import { selectCharacter } from "../../../store/actions";
-import { useSelector, useDispatch } from "react-redux";
-import { useHistory } from "react-router-dom";
+import SearchInput from "../../SearchInput";
 
 import "./styles.css";
 
-const HomeTemplate = () => {
-  const history = useHistory();
-  const dispatch = useDispatch();
-  const { characters } = useSelector((state) => state.charactersReducer);
-
-  const handleOnClick = async (char) => {
-    await dispatch(selectCharacter(char));
-    history.push("/detail");
-  };
+const HomeTemplate = ({
+  characters,
+  handleOnClick,
+  handleOnChange,
+  handleOnSelect,
+  listOptions,
+}) => {
   return (
     <>
       <p>DESAFIO</p>
       <p>LISTAGEM DE PERSONAGENS DA MARVEL</p>
-      <input />
+      <div className="input-search">
+        <SearchInput
+          placeholder="Buscador de personagens"
+          options={listOptions}
+          handleOnChange={handleOnChange}
+          handleOnSelect={handleOnSelect}
+        />
+      </div>
       <Grid list={characters} handleOnClick={handleOnClick} />
     </>
   );
